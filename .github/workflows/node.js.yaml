@@ -11,14 +11,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - run: corepack enable
+      - run: |
+        echo "Installing corepack"
+        npm install -g corepack
+        corepack enable
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
           cache: "pnpm"
-      - run: pnpm i
-      - run: pnpm run test
+      - run: |
+        pnpm i
+        pnpm run test
 
   build:
     name: build
@@ -26,10 +29,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - run: corepack enable
+      - run: |
+        echo "Installing corepack"
+        npm install -g corepack
+        corepack enable
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
           cache: "pnpm"
-      - run: pnpm i
-      - run: pnpm run build
+      - run: |
+        pnpm i
+        pnpm run build
