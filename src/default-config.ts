@@ -1,15 +1,15 @@
-import eslint from '@eslint/js';
-import tseslint from 'typescript-eslint';
-import type { ConfigArray } from 'typescript-eslint';
-import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
-import eslintPluginImportX from 'eslint-plugin-import-x';
-import tsParser from '@typescript-eslint/parser';
-import unicorn from 'eslint-plugin-unicorn';
-import globals from 'globals';
-import unusedImports from 'eslint-plugin-unused-imports';
-import packageJsonRecommended from 'eslint-plugin-package-json/configs/recommended';
+import eslint from '@eslint/js'
+import tseslint from 'typescript-eslint'
+import type { ConfigArray } from 'typescript-eslint'
+import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
+import eslintPluginImportX from 'eslint-plugin-import-x'
+import tsParser from '@typescript-eslint/parser'
+import unicorn from 'eslint-plugin-unicorn'
+import globals from 'globals'
+import unusedImports from 'eslint-plugin-unused-imports'
+import packageJsonRecommended from 'eslint-plugin-package-json/configs/recommended'
 
-export { ConfigArray };
+export { ConfigArray }
 
 export const defaultConfig: ConfigArray = tseslint.config(
   {
@@ -101,8 +101,9 @@ export const defaultConfig: ConfigArray = tseslint.config(
         'error',
         {
           singleQuote: true,
+          semi: false,
         },
       ],
     },
   },
-);
+)

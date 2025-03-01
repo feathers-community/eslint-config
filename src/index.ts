@@ -1,5 +1,5 @@
-import { ConfigArray, defaultConfig } from './default-config.js';
+import { ConfigArray, defaultConfig } from './default-config.js'
 
-export * from './default-config.js';
+export * from './default-config.js'
 
-export default (): ConfigArray => defaultConfig;
+export default (): ConfigArray => defaultConfig
