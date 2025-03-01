@@ -20,6 +20,13 @@
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "src/**",
+    "dist/**"
+  ],
   "scripts": {
     "build": "tsup --clean --dts",
     "lint": "eslint",

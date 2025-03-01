@@ -88,6 +88,11 @@ export const defaultConfig: ConfigArray = tseslint.config(
   },
   // package.json
   packageJson,
+  {
+    rules: {
+      'package-json/require-files': 'error',
+    },
+  },
   // prettier
   eslintPluginPrettierRecommended,
   {
