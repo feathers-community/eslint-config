@@ -32,7 +32,7 @@
     "lint": "eslint",
     "release": "np",
     "test": "eslint",
-    "version": "npm run build"
+    "version": "pnpm run build"
   },
   "dependencies": {
     "@eslint/js": "^9.21.0",
