@@ -2,19 +2,15 @@
   "name": "@feathers-community/eslint-config",
   "version": "0.0.0",
   "description": "",
-  "scripts": {
-    "build": "tsup --clean --dts",
-    "version": "npm run build",
-    "release": "np",
-    "test": "eslint",
-    "lint": "eslint"
-  },
-  "keywords": [],
-  "author": "Feathers Community",
+  "keywords": [
+    "feathers",
+    "feathers.js",
+    "eslint",
+    "eslint-config"
+  ],
   "license": "MIT",
+  "author": "Feathers Community",
   "type": "module",
-  "types": "./dist/index.d.ts",
-  "main": "./dist/index.js",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -22,12 +18,22 @@
       "default": "./dist/index.js"
     }
   },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup --clean --dts",
+    "lint": "eslint",
+    "release": "np",
+    "test": "eslint",
+    "version": "npm run build"
+  },
   "dependencies": {
     "@eslint/js": "^9.21.0",
     "@typescript-eslint/parser": "^8.25.0",
     "eslint-config-prettier": "^10.0.2",
     "eslint-import-resolver-typescript": "^3.8.3",
     "eslint-plugin-import-x": "^4.6.1",
+    "eslint-plugin-package-json": "^0.26.0",
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-unicorn": "^57.0.0",
     "eslint-plugin-unused-imports": "^4.1.4",
