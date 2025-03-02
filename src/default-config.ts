@@ -82,6 +82,7 @@ export const defaultConfig: ConfigArray = tseslint.config(
           varsIgnorePattern: '^_',
           args: 'after-used',
           argsIgnorePattern: '^_',
+          ignoreRestSiblings: true,
         },
       ],
     },
