@@ -1,3 +1,3 @@
-import feathersEslintConfig from './src/index.js';
+import feathersEslintConfig from './src/index.js'
 
-export default feathersEslintConfig();
+export default feathersEslintConfig()
