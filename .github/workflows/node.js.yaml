@@ -16,9 +16,8 @@ jobs:
         with:
           node-version: "22"
           cache: "pnpm"
-      - run: |
-        pnpm i
-        pnpm run test
+      - run: pnpm i
+      - run: pnpm run test
 
   build:
     name: build
@@ -32,6 +31,5 @@ jobs:
         with:
           node-version: "22"
           cache: "pnpm"
-      - run: |
-        pnpm i
-        pnpm run build
+      - run: pnpm i
+      - run: pnpm run build
