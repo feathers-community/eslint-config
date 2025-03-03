@@ -44,7 +44,6 @@ export const defaultConfig: ConfigArray = tseslint.config(
       sourceType: 'module',
       parserOptions: {
         projectService: {
-          allowDefaultProject: ['./*.js'],
           defaultProject: 'tsconfig.json',
         },
         tsconfigRootDir: process.cwd(),
