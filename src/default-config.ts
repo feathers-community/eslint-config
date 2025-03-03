@@ -8,6 +8,7 @@ import unicorn from 'eslint-plugin-unicorn'
 import globals from 'globals'
 import unusedImports from 'eslint-plugin-unused-imports'
 import packageJsonRecommended from 'eslint-plugin-package-json/configs/recommended'
+import process from 'node:process'
 
 export { ConfigArray }
 
@@ -35,13 +36,27 @@ export const defaultConfig: ConfigArray = tseslint.config(
   eslintPluginImportX.flatConfigs.recommended,
   eslintPluginImportX.flatConfigs.typescript,
   {
-    files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
-    ignores: ['eslint.config.js'],
+    files: ['**/*.{ts,tsx}'],
+    ignores: [],
     languageOptions: {
       parser: tsParser,
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        project: './tsconfig.json',
+        tsconfigRootDir: process.cwd(),
+      },
+    },
+  },
+  {
+    files: ['**/*.{js,mjs}'],
+    languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
     },
+  },
+  // import-x
+  {
     rules: {
       'import-x/no-dynamic-require': 'warn',
       'import-x/no-nodejs-modules': 'off',
