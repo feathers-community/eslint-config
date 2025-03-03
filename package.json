@@ -50,6 +50,7 @@
   },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.0",
+    "@types/node": "^22.13.8",
     "eslint": "^9.21.0",
     "jiti": "^2.4.2",
     "np": "^10.2.0",
