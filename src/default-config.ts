@@ -27,7 +27,9 @@ export type FeathersEslintConfigOptions = {
   }
 }
 
-export const defaultConfig = (options?: FeathersEslintConfigOptions) => {
+export const defaultConfig = (
+  options?: FeathersEslintConfigOptions,
+): ConfigArray => {
   const tsconfigPath = options?.tsconfig?.path ?? './tsconfig.json'
   const tsconfigRootDir = options?.tsconfig?.rootDir ?? process.cwd()
   return tseslint.config(

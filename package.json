@@ -39,7 +39,8 @@
     "lint": "eslint",
     "release": "np",
     "test": "eslint",
-    "version": "pnpm run build"
+    "version": "pnpm run build",
+    "check": "pnpm run test && pnpm run build"
   },
   "dependencies": {
     "@eslint/js": "^9.22.0",
