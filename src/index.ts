@@ -1,5 +1,10 @@
-import { ConfigArray, defaultConfig } from './default-config.js'
+import type {
+  ConfigArray,
+  FeathersEslintConfigOptions,
+} from './default-config.js'
+import { defaultConfig } from './default-config.js'
 
 export * from './default-config.js'
 
-export default (): ConfigArray => defaultConfig
+export default (options?: FeathersEslintConfigOptions): ConfigArray =>
+  defaultConfig(options)
