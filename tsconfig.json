@@ -1,11 +1,11 @@
 {
-    "extends": "@tsconfig/node22/tsconfig.json",
-    "compilerOptions": {
-      "outDir": "./dist",
-      "rootDir": "./src",
-      "esModuleInterop": true,
-    },
-    "include": ["**/*"],
-    "exclude": ["node_modules"]
-  }
+  "extends": "@tsconfig/node22/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "esModuleInterop": true,
+  },
+  "include": ["**/*"],
+  "exclude": ["node_modules", "dist"]
+}
   
