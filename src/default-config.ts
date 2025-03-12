@@ -9,7 +9,6 @@ import globals from 'globals'
 import unusedImports from 'eslint-plugin-unused-imports'
 import packageJsonRecommended from 'eslint-plugin-package-json/configs/recommended'
 import process from 'node:process'
-import { rules as tsEslintRules } from '@typescript-eslint/eslint-plugin'
 
 export { ConfigArray }
 
@@ -40,6 +39,9 @@ export const defaultConfig = (
         '**/coverage',
         'docs/.vitepress/cache',
         'docs/.vitepress/dist',
+        '**/*.d.ts',
+        '**/*.cjs',
+        '**/*.json',
       ],
     },
     eslint.configs.recommended,
@@ -133,12 +135,6 @@ export const defaultConfig = (
       ...packageJsonRecommended,
       rules: {
         'package-json/require-files': 'error',
-        ...Object.fromEntries(
-          Object.keys(tsEslintRules).map((rule) => [
-            `@typescript-eslint/${rule}`,
-            'off',
-          ]),
-        ),
       },
     },
     // prettier
