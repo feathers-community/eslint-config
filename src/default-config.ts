@@ -7,7 +7,7 @@ import tsParser from '@typescript-eslint/parser'
 import unicorn from 'eslint-plugin-unicorn'
 import globals from 'globals'
 import unusedImports from 'eslint-plugin-unused-imports'
-import packageJsonRecommended from 'eslint-plugin-package-json/configs/recommended'
+import { configs as packageJsonConfigs } from 'eslint-plugin-package-json'
 import process from 'node:process'
 
 export { ConfigArray }
@@ -132,7 +132,7 @@ export const defaultConfig = (
     },
     // package.json
     {
-      ...packageJsonRecommended,
+      ...packageJsonConfigs.recommended,
       rules: {
         'package-json/require-files': 'error',
       },
