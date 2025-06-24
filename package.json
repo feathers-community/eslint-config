@@ -43,23 +43,23 @@
     "check": "pnpm run test && pnpm run build"
   },
   "dependencies": {
-    "@eslint/js": "^9.28.0",
-    "@typescript-eslint/eslint-plugin": "^8.33.1",
-    "@typescript-eslint/parser": "^8.33.1",
+    "@eslint/js": "^9.29.0",
+    "@typescript-eslint/eslint-plugin": "^8.35.0",
+    "@typescript-eslint/parser": "^8.35.0",
     "eslint-config-prettier": "^10.1.5",
-    "eslint-import-resolver-typescript": "^4.4.2",
-    "eslint-plugin-import-x": "^4.15.1",
-    "eslint-plugin-package-json": "^0.33.2",
-    "eslint-plugin-prettier": "^5.4.1",
+    "eslint-import-resolver-typescript": "^4.4.3",
+    "eslint-plugin-import-x": "^4.15.2",
+    "eslint-plugin-package-json": "^0.41.0",
+    "eslint-plugin-prettier": "^5.5.0",
     "eslint-plugin-unicorn": "^59.0.1",
     "eslint-plugin-unused-imports": "^4.1.4",
     "globals": "^16.2.0",
-    "typescript-eslint": "^8.33.1"
+    "typescript-eslint": "^8.35.0"
   },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.2",
-    "@types/node": "^22.15.30",
-    "eslint": "^9.28.0",
+    "@types/node": "^24.0.4",
+    "eslint": "^9.29.0",
     "jiti": "^2.4.2",
     "np": "^10.2.0",
     "tsup": "^8.5.0"
@@ -67,5 +67,5 @@
   "peerDependencies": {
     "eslint": "^9.0.0"
   },
-  "packageManager": "pnpm@9.15.4"
+  "packageManager": "pnpm@10.12.3"
 }
