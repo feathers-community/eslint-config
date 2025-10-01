@@ -6,5 +6,9 @@ import { defaultConfig } from './default-config.js'
 
 export * from './default-config.js'
 
-export default (options?: FeathersEslintConfigOptions): ConfigArray =>
-  defaultConfig(options)
+export default (
+  options?: FeathersEslintConfigOptions,
+  ...userConfigs: ConfigArray
+): ConfigArray => {
+  return defaultConfig(options, ...userConfigs)
+}
