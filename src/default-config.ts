@@ -143,7 +143,7 @@ export const defaultConfig = (
     {
       rules: {
         'prettier/prettier': [
-          'error',
+          'warn',
           {
             singleQuote: true,
             semi: false,
