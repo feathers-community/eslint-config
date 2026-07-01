@@ -9,6 +9,7 @@ import globals from 'globals'
 import unusedImports from 'eslint-plugin-unused-imports'
 import { configs as packageJsonConfigs } from 'eslint-plugin-package-json'
 import process from 'node:process'
+import { prettierConfig } from './prettier.js'
 
 export { ConfigArray }
 
@@ -142,13 +143,7 @@ export const defaultConfig = (
     eslintPluginPrettierRecommended,
     {
       rules: {
-        'prettier/prettier': [
-          'warn',
-          {
-            singleQuote: true,
-            semi: false,
-          },
-        ],
+        'prettier/prettier': ['warn', prettierConfig],
       },
     },
     ...userConfigs,

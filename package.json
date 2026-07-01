@@ -23,6 +23,11 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "default": "./dist/index.js"
+    },
+    "./prettier": {
+      "types": "./dist/prettier.d.ts",
+      "import": "./dist/prettier.js",
+      "default": "./dist/prettier.js"
     }
   },
   "main": "./dist/index.js",
@@ -62,6 +67,7 @@
     "eslint": "^10.3.0",
     "jiti": "^2.7.0",
     "np": "^11.2.0",
+    "prettier": "^3.8.3",
     "tsup": "^8.5.1"
   },
   "peerDependencies": {

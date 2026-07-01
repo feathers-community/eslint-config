@@ -5,6 +5,7 @@ import type {
 import { defaultConfig } from './default-config.js'
 
 export * from './default-config.js'
+export { prettierConfig } from './prettier.js'
 
 export default (
   options?: FeathersEslintConfigOptions,

@@ -18,6 +18,21 @@ import config from "@feathers-community/eslint-config";
 export default config();
 ```
 
+## Prettier
+
+The Prettier options used by the `prettier/prettier` rule are also exported
+standalone, so editors and the Prettier CLI format files that ESLint does not
+process (e.g. the code blocks embedded in Markdown) with the exact same options.
+
+Reference it from your `package.json`:
+
+```jsonc
+// package.json
+{
+  "prettier": "@feathers-community/eslint-config/prettier"
+}
+```
+
 ## Used plugins/rules
 
 _see [config](https://github.com/feathers-community/eslint-config/blob/main/src/default-config.ts)_
