@@ -5,6 +5,7 @@ import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
 import eslintPluginImportX from 'eslint-plugin-import-x'
 import tsParser from '@typescript-eslint/parser'
 import unicorn from 'eslint-plugin-unicorn'
+import e18e from '@e18e/eslint-plugin'
 import globals from 'globals'
 import unusedImports from 'eslint-plugin-unused-imports'
 import { configs as packageJsonConfigs } from 'eslint-plugin-package-json'
@@ -104,13 +105,14 @@ export const defaultConfig = (
         'unicorn/consistent-assert': 'warn',
         'unicorn/consistent-date-clone': 'warn',
         'unicorn/consistent-empty-array-spread': 'warn',
-        'unicorn/prefer-date-now': 'warn',
         'unicorn/prefer-module': 'warn',
         'unicorn/prefer-node-protocol': 'warn',
         'unicorn/prefer-object-from-entries': 'warn',
         'unicorn/prefer-set-size': 'warn',
       },
     },
+    // e18e
+    e18e.configs.recommended,
     // unused-imports
     {
       plugins: {
